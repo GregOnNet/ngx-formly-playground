@@ -188,7 +188,7 @@
   dependencies:
     tslib "^1.9.0"
 
-"@angular/forms@~8.2.3":
+"@angular/forms@^8.2.3":
   version "8.2.3"
   resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-8.2.3.tgz#c83a0195311c3422e25ef21e602b898f4d2d06be"
   integrity sha512-BDphHWx6FI3wfOd9XqhiUBKuIg4dnpr9Aw5+n1by4y9e2avBwWoefHJ15FtEZdop5qMwVWlCcHjdwZ2+q65f4g==
@@ -874,6 +874,20 @@
     rxjs "6.4.0"
     tree-kill "1.2.1"
     webpack-sources "1.4.3"
+
+"@ngx-formly/core@^5.4.1":
+  version "5.4.1"
+  resolved "https://registry.yarnpkg.com/@ngx-formly/core/-/core-5.4.1.tgz#c964a7b923c0a29d1631c637c75cd076197ba348"
+  integrity sha512-smrifYGeu+Spb68Q//h0vHBbxfcmV4Qzs74wB6ajmczNBB0uL3eeYEVpsZhqFP9M3VKe16LJAdzMyy6X5oRt7Q==
+  dependencies:
+    tslib "^1.7.1"
+
+"@ngx-formly/material@^5.4.1":
+  version "5.4.1"
+  resolved "https://registry.yarnpkg.com/@ngx-formly/material/-/material-5.4.1.tgz#074db28eb4ccadc2bcef1d5b4d069e5cf2e5b74c"
+  integrity sha512-3HrGUbtMCuURwJPVQt9oyJa/jLCiprTpLgSU/gW/u0YezrFiir6lVpAIYHbcMQROstY9rQn7aIcQbwWpACvatA==
+  dependencies:
+    tslib "^1.9.0"
 
 "@schematics/angular@8.3.1":
   version "8.3.1"
