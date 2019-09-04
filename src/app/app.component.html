@@ -13,6 +13,8 @@
     [form]="form"
     [fields]="forms.edit"
     [model]="model"
-    ><button type="submit" mat-button>Submit</button></formly-form
+    ><button [disabled]="form.invalid" type="submit" mat-button>
+      Submit
+    </button></formly-form
   >
 </form>

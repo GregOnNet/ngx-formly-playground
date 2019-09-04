@@ -4,7 +4,11 @@ import { MatSlideToggleChange } from '@angular/material';
 import { config, FormlyMeta } from './app.component.formly-config';
 
 export interface ContactForm {
-  contact: { email: string };
+  contact: {
+    email: string;
+    firstName: string;
+    lastName: string;
+  };
 }
 
 @Component({
@@ -23,7 +27,13 @@ export class AppComponent {
   constructor(private fb: FormBuilder) {
     this.forms = config;
     this.form = this.fb.group({});
-    this.model = { contact: { email: 'email@gmail.com' } };
+    this.model = {
+      contact: {
+        email: 'email@gmail.com',
+        firstName: 'Gregor',
+        lastName: 'Woiwode'
+      }
+    };
   }
 
   toggleEditMode(state: MatSlideToggleChange) {
