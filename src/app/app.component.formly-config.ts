@@ -57,7 +57,7 @@ function email() {
     type: 'input',
     templateOptions: {
       disabled: false,
-      label: 'Email address',
+      label: 'Email',
       placeholder: 'Enter email',
       required: true
     }
