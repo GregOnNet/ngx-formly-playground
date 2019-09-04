@@ -13,13 +13,6 @@ export const config: FormlyMeta = {
       templateOptions: { label: 'Contact' },
       fieldGroup: [
         {
-          key: 'email',
-          type: 'labeled-text',
-          templateOptions: {
-            label: 'E-Mail address'
-          }
-        },
-        {
           wrappers: ['labeled-section'],
           templateOptions: { label: 'Full name' },
           fieldGroupClassName: 'formly__one-line-group',
@@ -30,6 +23,13 @@ export const config: FormlyMeta = {
             },
             { key: 'lastName', type: 'labeled-text' }
           ]
+        },
+        {
+          key: 'email',
+          type: 'labeled-text',
+          templateOptions: {
+            label: 'E-Mail address'
+          }
         }
       ]
     }
