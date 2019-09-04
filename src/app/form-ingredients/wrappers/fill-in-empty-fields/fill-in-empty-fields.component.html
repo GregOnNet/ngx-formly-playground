@@ -2,7 +2,9 @@
   <ng-container #fieldComponent></ng-container>
 </div>
 
-<div *ngIf="amountOfEmptyFields > 0" class="please-complete-form">
-  Please fill in {{ amountOfEmptyFields }} field(s) to make this section
-  complete.
-</div>
+<ng-container *ngIf="amountOfEmptyFields$ | async as amountOfEmptyFields">
+  <div *ngIf="amountOfEmptyFields > 0" class="please-complete-form">
+    Please fill in {{ amountOfEmptyFields }} field(s) to make this section
+    complete.
+  </div>
+</ng-container>
