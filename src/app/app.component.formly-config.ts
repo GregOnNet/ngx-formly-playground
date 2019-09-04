@@ -39,38 +39,46 @@ export const config: FormlyMeta = {
       key: 'contact',
       wrappers: ['labeled-section'],
       templateOptions: { label: 'Contact' },
-      fieldGroup: [
-        {
-          key: 'firstName',
-          type: 'input',
-          templateOptions: {
-            disabled: false,
-            label: 'First Name',
-            placeholder: 'Enter your first name please',
-            required: true
-          }
-        },
-        {
-          key: 'lastName',
-          type: 'input',
-          templateOptions: {
-            disabled: false,
-            label: 'Last Name',
-            placeholder: 'Enter your last name please',
-            required: true
-          }
-        },
-        {
-          key: 'email',
-          type: 'input',
-          templateOptions: {
-            disabled: false,
-            label: 'Email address',
-            placeholder: 'Enter email',
-            required: true
-          }
-        }
-      ]
+      fieldGroup: [firstName(), lastName(), email()]
     }
   ]
 };
+
+function email() {
+  return {
+    key: 'email',
+    type: 'input',
+    templateOptions: {
+      disabled: false,
+      label: 'Email address',
+      placeholder: 'Enter email',
+      required: true
+    }
+  };
+}
+
+function lastName() {
+  return {
+    key: 'lastName',
+    type: 'input',
+    templateOptions: {
+      disabled: false,
+      label: 'Last Name',
+      placeholder: 'Enter your last name please',
+      required: true
+    }
+  };
+}
+
+function firstName() {
+  return {
+    key: 'firstName',
+    type: 'input',
+    templateOptions: {
+      disabled: false,
+      label: 'First name',
+      placeholder: 'Enter your first name please',
+      required: true
+    }
+  };
+}
