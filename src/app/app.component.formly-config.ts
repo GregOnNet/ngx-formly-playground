@@ -25,6 +25,13 @@ export const config: FormlyMeta = {
           ]
         },
         {
+          key: 'twitter',
+          type: 'labeled-text',
+          templateOptions: {
+            label: 'Twitter'
+          }
+        },
+        {
           key: 'email',
           type: 'labeled-text',
           templateOptions: {
@@ -39,7 +46,7 @@ export const config: FormlyMeta = {
       key: 'contact',
       wrappers: ['labeled-section'],
       templateOptions: { label: 'Contact' },
-      fieldGroup: [firstName(), lastName(), email()]
+      fieldGroup: [firstName(), lastName(), twitter(), email()]
     }
   ]
 };
@@ -52,6 +59,19 @@ function email() {
       disabled: false,
       label: 'Email address',
       placeholder: 'Enter email',
+      required: true
+    }
+  };
+}
+
+function twitter() {
+  return {
+    key: 'twitter',
+    type: 'input',
+    templateOptions: {
+      disabled: false,
+      label: 'Twitter',
+      placeholder: 'Enter your twitter handle',
       required: true
     }
   };

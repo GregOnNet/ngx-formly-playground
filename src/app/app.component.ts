@@ -6,6 +6,7 @@ import { config, FormlyMeta } from './app.component.formly-config';
 export interface ContactForm {
   contact: {
     email: string;
+    twitter: string;
     firstName: string;
     lastName: string;
   };
@@ -30,6 +31,7 @@ export class AppComponent {
     this.model = {
       contact: {
         email: 'email@gmail.com',
+        twitter: 'GregOnNet',
         firstName: 'Gregor',
         lastName: 'Woiwode'
       }

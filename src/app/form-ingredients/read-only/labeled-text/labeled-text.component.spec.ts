@@ -1,5 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { LabeledTextComponent } from './text-with-label.component';
+import { LabeledTextComponent } from './labeled-text.component';
 
 describe('TextWithLabelComponent', () => {
   let component: LabeledTextComponent;
