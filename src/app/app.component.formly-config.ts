@@ -8,20 +8,35 @@ export interface FormlyMeta {
 export const config: FormlyMeta = {
   view: [
     {
-      key: 'email',
-      type: 'text-with-label'
+      key: 'contact',
+      wrappers: ['labeled-section'],
+      templateOptions: { label: 'Contact' },
+      fieldGroup: [
+        {
+          key: 'email',
+          type: 'labeled-text',
+          templateOptions: {
+            label: 'E-Mail address'
+          }
+        }
+      ]
     }
   ],
   edit: [
     {
-      key: 'email',
-      type: 'input',
-      templateOptions: {
-        disabled: false,
-        label: 'Email address',
-        placeholder: 'Enter email',
-        required: true
-      }
+      key: 'contact',
+      fieldGroup: [
+        {
+          key: 'email',
+          type: 'input',
+          templateOptions: {
+            disabled: false,
+            label: 'Email address',
+            placeholder: 'Enter email',
+            required: true
+          }
+        }
+      ]
     }
   ]
 };

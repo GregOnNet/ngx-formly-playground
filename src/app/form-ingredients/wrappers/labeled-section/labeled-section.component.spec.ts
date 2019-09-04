@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TextWithLabelComponent } from './text-with-label.component';
+import { LabeledSectionComponent } from './labeled-section.component';
 
-describe('TextWithLabelComponent', () => {
-  let component: TextWithLabelComponent;
-  let fixture: ComponentFixture<TextWithLabelComponent>;
+describe('LabeledSectionComponent', () => {
+  let component: LabeledSectionComponent;
+  let fixture: ComponentFixture<LabeledSectionComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TextWithLabelComponent ]
+      declarations: [ LabeledSectionComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TextWithLabelComponent);
+    fixture = TestBed.createComponent(LabeledSectionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

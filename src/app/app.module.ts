@@ -6,18 +6,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormlyModule } from '@ngx-formly/core';
 import { FormlyMaterialModule } from '@ngx-formly/material';
 import { AppComponent } from './app.component';
-import { TextWithLabelComponent } from './forms/text-with-label/text-with-label.component';
+import { FormIngredientsModule } from './form-ingredients/form-ingredients.module';
 
 @NgModule({
-  declarations: [AppComponent, TextWithLabelComponent],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    FormlyModule.forRoot({
-      types: [{ name: 'text-with-label', component: TextWithLabelComponent }]
-    }),
+    FormlyModule.forRoot(),
     FormlyMaterialModule,
+    FormIngredientsModule,
     MatButtonModule
   ],
   providers: [],
