@@ -5,8 +5,7 @@ import {
   debounceTime,
   distinctUntilChanged,
   map,
-  startWith,
-  tap
+  startWith
 } from 'rxjs/operators';
 
 @Component({
@@ -22,7 +21,6 @@ export class FillInEmptyFieldsComponent extends FieldWrapper implements OnInit {
       startWith(0),
       debounceTime(300),
       distinctUntilChanged(),
-      tap(console.log),
       map(() => this.countEmptyFieldsRecursive(this.field, 0))
     );
   }
