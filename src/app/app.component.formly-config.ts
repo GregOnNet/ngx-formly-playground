@@ -9,7 +9,7 @@ export const config: FormlyMeta = {
   view: [
     {
       key: 'contact',
-      wrappers: ['labeled-section'],
+      wrappers: ['labeled-section', 'fill-in-empty-fields'],
       templateOptions: { label: 'Contact' },
       fieldGroup: [
         {

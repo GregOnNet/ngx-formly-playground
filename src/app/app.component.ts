@@ -32,7 +32,7 @@ export class AppComponent {
       contact: {
         email: 'email@gmail.com',
         twitter: 'GregOnNet',
-        firstName: 'Gregor',
+        firstName: '',
         lastName: 'Woiwode'
       }
     };
