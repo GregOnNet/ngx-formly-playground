@@ -25,6 +25,8 @@ export const config: FormlyMeta = {
   edit: [
     {
       key: 'contact',
+      wrappers: ['labeled-section'],
+      templateOptions: { label: 'Contact' },
       fieldGroup: [
         {
           key: 'email',

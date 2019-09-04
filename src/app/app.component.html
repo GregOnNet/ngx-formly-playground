@@ -1,15 +1,18 @@
+<mat-slide-toggle (change)="toggleEditMode($event)">Edit</mat-slide-toggle>
+
 <form [formGroup]="form" (ngSubmit)="submit(model)">
   <formly-form
+    [hidden]="isInEditMode"
     [form]="form"
     [fields]="forms.view"
     [model]="model"
   ></formly-form>
 
   <formly-form
+    [hidden]="!isInEditMode"
     [form]="form"
     [fields]="forms.edit"
     [model]="model"
-  ></formly-form>
-
-  <button type="submit" mat-button>Submit</button>
+    ><button type="submit" mat-button>Submit</button></formly-form
+  >
 </form>
